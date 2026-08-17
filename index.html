@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>法务匠 · 科技创业标准法律文档产品</title>
+  <meta name="description" content="专为科技创业公司打造的标准化法律文档产品：选模板、微信支付、填问卷，AI 自动生成可下载文书，即买即用。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="brand">⚖️ 法务匠</div>
+      <nav class="nav-links">
+        <a href="#how">怎么用</a>
+        <a href="#catalog">服务</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <a href="#catalog" class="btn btn-primary btn-sm">立即体验</a>
+    </div>
+  </header>
+
+  <!-- 英雄区 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="badge">科技创业专属 · AI 自动生成</span>
+      <h1>把创业要用的法律文书<br>变成「点一下就能拿到」</h1>
+      <p class="hero-sub">
+        公司章程、股东协议、Term Sheet、SAFE、保密协议、隐私政策……<br>
+        选服务 → 微信支付 → 填份问卷，<b>定制文书秒生成、可直接下载</b>，你不用等、我不用管。
+      </p>
+      <div class="hero-cta">
+        <a href="#catalog" class="btn btn-primary">浏览文书产品</a>
+        <a href="#how" class="btn btn-ghost">看看怎么用</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>6+</b><span>常用文书模板</span></div>
+        <div><b>3 类</b><span>创业核心场景</span></div>
+        <div><b>24h</b><span>随时自助下单</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合规免责声明条 -->
+  <section class="disclaimer-bar">
+    <div class="disclaimer-inner">
+      ⚠️ 本平台为<strong>标准化法律文档模板工具</strong>。自动生成的文书<strong>不构成法律意见、不建立委托代理关系</strong>，亦非律师事务所或律师提供的法律服务。重大事项请自行审阅或咨询专业人士，使用风险由使用者自行承担。
+    </div>
+  </section>
+
+  <!-- 三步流程 -->
+  <section class="how" id="how">
+    <div class="section-head">
+      <h2>三步拿到你的法律文档</h2>
+      <p>不用排队等待、不用反复沟通，全程线上自助完成。</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-no">1</div>
+        <h3>选服务并支付</h3>
+        <p>挑出你需要的文书，微信扫码支付，价格透明。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">2</div>
+        <h3>填一份问卷</h3>
+        <p>按提示填公司名、股权、条款偏好等关键信息，1–2 分钟搞定。</p>
+      </div>
+      <div class="step">
+        <div class="step-no">3</div>
+        <h3>AI 自动生成</h3>
+        <p>系统按你的信息生成定制文书，预览无误即可下载为 Word 文档。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务目录（由 JS 渲染） -->
+  <section class="catalog" id="catalog">
+    <div class="section-head">
+      <h2>法律文档产品目录</h2>
+      <p>覆盖创业从注册、融资到合规的关键节点。本目录提供标准化文书模板，非个案法律服务。</p>
+    </div>
+    <div id="catalog-root"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>生成的文书有法律效力吗？</summary>
+        <p>文书基于标准法律文本与你的填写信息自动生成，可直接用于备案、签署或内部使用。重大交易建议由律师做最终审阅，页面内已标注提示。</p>
+      </details>
+      <details>
+        <summary>如果填错了能重新生成吗？</summary>
+        <p>可以。每份已购订单都保存在「我的订单」里，随时回到问卷重填、重新生成并下载。</p>
+      </details>
+      <details>
+        <summary>支持哪些支付方式？</summary>
+        <p>当前接入微信支付。需在你的微信支付商户后台配置后生效（接入点已在代码中预留）。</p>
+      </details>
+      <details>
+        <summary>想增加新的文书品类怎么办？</summary>
+        <p>在 <code>assets/js/products.js</code> 中按既有结构新增一个产品对象（含问卷与生成函数）即可，无需改动其它代码。</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>⚖️ 法务匠 · 科技创业标准法律文档产品</div>
+      <div class="footer-note">
+        <b>免责声明：</b>本平台提供<strong>标准化法律文档模板</strong>，由 AI 依据通用模板与你的填写信息自动生成，<strong>不构成法律意见，不建立委托代理关系，亦非律师事务所或律师提供的法律服务</strong>。文书仅供参考，使用前请自行审阅或就重大事项咨询专业人士，最终使用风险由使用者自行承担。
+      </div>
+      <a href="#" id="ordersLink" class="footer-link">我的订单</a>
+    </div>
+  </footer>
+
+  <!-- 下单 / 生成 流程弹窗 -->
+  <div class="modal-mask" id="flowModal" hidden>
+    <div class="modal" id="flowBox">
+      <button class="modal-close" id="flowClose" aria-label="关闭">×</button>
+      <div id="flowContent"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
